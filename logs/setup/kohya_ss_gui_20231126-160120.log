@@ -1,0 +1,156 @@
+2023-11-26 16:01:20,194 | sd | INFO | setup_linux | Installing python dependencies. This could take a few minutes as it downloads files.
+2023-11-26 16:01:20,196 | sd | INFO | setup_linux | If this operation ever runs too long, you can rerun this script in verbose mode to check.
+2023-11-26 16:01:20,197 | sd | INFO | setup_common | Version: v22.2.1
+
+2023-11-26 16:01:20,197 | sd | INFO | setup_common | Python 3.10.13 on Darwin
+2023-11-26 16:01:20,198 | sd | DEBUG | setup_common | Package version found: pip 23.3.1
+2023-11-26 16:01:20,198 | sd | INFO | setup_common | Installing modules from requirements_macos_arm64.txt...
+2023-11-26 16:01:20,199 | sd | DEBUG | setup_common | Package version not found: torch
+2023-11-26 16:01:20,199 | sd | INFO | setup_common | Installing package: torch==2.0.0 torchvision==0.15.1 -f https://download.pytorch.org/whl/cpu/torch_stable.html
+2023-11-26 16:01:20,199 | sd | DEBUG | setup_common | Running pip: install --upgrade torch==2.0.0 torchvision==0.15.1 -f https://download.pytorch.org/whl/cpu/torch_stable.html
+2023-11-26 16:01:47,162 | sd | DEBUG | setup_common | Package version not found: xformers
+2023-11-26 16:01:47,162 | sd | INFO | setup_common | Installing package: xformers bitsandbytes==0.41.1
+2023-11-26 16:01:47,163 | sd | DEBUG | setup_common | Running pip: install --upgrade xformers bitsandbytes==0.41.1
+2023-11-26 16:01:49,441 | sd | ERROR | setup_common | Error running pip: install --upgrade xformers bitsandbytes==0.41.1
+2023-11-26 16:01:49,441 | sd | DEBUG | setup_common | Pip output: Collecting xformers
+  Downloading xformers-0.0.22.post7.tar.gz (3.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 41.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [17 lines of output]
+      Traceback (most recent call last):
+        File "/Users/nazanin/Desktop/trainDB/kohya_ss/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+        File "/Users/nazanin/Desktop/trainDB/kohya_ss/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+        File "/Users/nazanin/Desktop/trainDB/kohya_ss/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 118, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/private/var/folders/2n/39ktwlqd321cynczv99gjr8r0000gn/T/pip-build-env-ubs4i80h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 325, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=['wheel'])
+        File "/private/var/folders/2n/39ktwlqd321cynczv99gjr8r0000gn/T/pip-build-env-ubs4i80h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 295, in _get_build_requires
+          self.run_setup()
+        File "/private/var/folders/2n/39ktwlqd321cynczv99gjr8r0000gn/T/pip-build-env-ubs4i80h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 480, in run_setup
+          super(_BuildMetaLegacyBackend, self).run_setup(setup_script=setup_script)
+        File "/private/var/folders/2n/39ktwlqd321cynczv99gjr8r0000gn/T/pip-build-env-ubs4i80h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 311, in run_setup
+          exec(code, locals())
+        File "<string>", line 23, in <module>
+      ModuleNotFoundError: No module named 'torch'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+2023-11-26 16:01:49,442 | sd | DEBUG | setup_common | Package version not found: tensorflow-macos
+2023-11-26 16:01:49,442 | sd | INFO | setup_common | Installing package: tensorflow-macos tensorflow-metal tensorboard==2.14.1
+2023-11-26 16:01:49,442 | sd | DEBUG | setup_common | Running pip: install --upgrade tensorflow-macos tensorflow-metal tensorboard==2.14.1
+2023-11-26 16:02:08,110 | sd | INFO | setup_common | Installing modules from requirements.txt...
+2023-11-26 16:02:08,111 | sd | DEBUG | setup_common | Package version not found: accelerate
+2023-11-26 16:02:08,111 | sd | INFO | setup_common | Installing package: accelerate==0.23.0
+2023-11-26 16:02:08,112 | sd | DEBUG | setup_common | Running pip: install --upgrade accelerate==0.23.0
+2023-11-26 16:02:09,835 | sd | DEBUG | setup_common | Package version not found: aiofiles
+2023-11-26 16:02:09,835 | sd | INFO | setup_common | Installing package: aiofiles==23.2.1
+2023-11-26 16:02:09,835 | sd | DEBUG | setup_common | Running pip: install --upgrade aiofiles==23.2.1
+2023-11-26 16:02:10,413 | sd | DEBUG | setup_common | Package version not found: altair
+2023-11-26 16:02:10,413 | sd | INFO | setup_common | Installing package: altair==4.2.2
+2023-11-26 16:02:10,414 | sd | DEBUG | setup_common | Running pip: install --upgrade altair==4.2.2
+2023-11-26 16:02:14,961 | sd | DEBUG | setup_common | Package version not found: dadaptation
+2023-11-26 16:02:14,962 | sd | INFO | setup_common | Installing package: dadaptation==3.1
+2023-11-26 16:02:14,962 | sd | DEBUG | setup_common | Running pip: install --upgrade dadaptation==3.1
+2023-11-26 16:02:15,643 | sd | DEBUG | setup_common | Package version not found: diffusers
+2023-11-26 16:02:15,643 | sd | INFO | setup_common | Installing package: diffusers[torch]==0.21.4
+2023-11-26 16:02:15,644 | sd | DEBUG | setup_common | Running pip: install --upgrade diffusers[torch]==0.21.4
+2023-11-26 16:02:17,500 | sd | DEBUG | setup_common | Package version not found: easygui
+2023-11-26 16:02:17,500 | sd | INFO | setup_common | Installing package: easygui==0.98.3
+2023-11-26 16:02:17,501 | sd | DEBUG | setup_common | Running pip: install --upgrade easygui==0.98.3
+2023-11-26 16:02:18,204 | sd | DEBUG | setup_common | Package version not found: einops
+2023-11-26 16:02:18,204 | sd | INFO | setup_common | Installing package: einops==0.6.0
+2023-11-26 16:02:18,205 | sd | DEBUG | setup_common | Running pip: install --upgrade einops==0.6.0
+2023-11-26 16:02:18,886 | sd | DEBUG | setup_common | Package version not found: fairscale
+2023-11-26 16:02:18,887 | sd | INFO | setup_common | Installing package: fairscale==0.4.13
+2023-11-26 16:02:18,887 | sd | DEBUG | setup_common | Running pip: install --upgrade fairscale==0.4.13
+2023-11-26 16:02:19,752 | sd | DEBUG | setup_common | Package version not found: ftfy
+2023-11-26 16:02:19,752 | sd | INFO | setup_common | Installing package: ftfy==6.1.1
+2023-11-26 16:02:19,753 | sd | DEBUG | setup_common | Running pip: install --upgrade ftfy==6.1.1
+2023-11-26 16:02:20,512 | sd | DEBUG | setup_common | Package version not found: gradio
+2023-11-26 16:02:20,512 | sd | INFO | setup_common | Installing package: gradio==3.36.1
+2023-11-26 16:02:20,513 | sd | DEBUG | setup_common | Running pip: install --upgrade gradio==3.36.1
+2023-11-26 16:02:28,896 | sd | DEBUG | setup_common | Package version not found: huggingface-hub
+2023-11-26 16:02:28,896 | sd | INFO | setup_common | Installing package: huggingface-hub==0.15.1
+2023-11-26 16:02:28,897 | sd | DEBUG | setup_common | Running pip: install --upgrade huggingface-hub==0.15.1
+2023-11-26 16:02:29,897 | sd | DEBUG | setup_common | Package version not found: invisible-watermark
+2023-11-26 16:02:29,897 | sd | INFO | setup_common | Installing package: invisible-watermark==0.2.0
+2023-11-26 16:02:29,898 | sd | DEBUG | setup_common | Running pip: install --upgrade invisible-watermark==0.2.0
+2023-11-26 16:02:33,167 | sd | DEBUG | setup_common | Package version not found: lion-pytorch
+2023-11-26 16:02:33,167 | sd | INFO | setup_common | Installing package: lion-pytorch==0.0.6
+2023-11-26 16:02:33,168 | sd | DEBUG | setup_common | Running pip: install --upgrade lion-pytorch==0.0.6
+2023-11-26 16:02:33,958 | sd | DEBUG | setup_common | Package version not found: lycoris_lora
+2023-11-26 16:02:33,958 | sd | INFO | setup_common | Installing package: lycoris_lora==1.9.0
+2023-11-26 16:02:33,959 | sd | DEBUG | setup_common | Running pip: install --upgrade lycoris_lora==1.9.0
+2023-11-26 16:02:38,332 | sd | DEBUG | setup_common | Package version not found: onnx
+2023-11-26 16:02:38,332 | sd | INFO | setup_common | Installing package: onnx==1.14.1
+2023-11-26 16:02:38,333 | sd | DEBUG | setup_common | Running pip: install --upgrade onnx==1.14.1
+2023-11-26 16:02:42,181 | sd | DEBUG | setup_common | Package version not found: onnxruntime-gpu
+2023-11-26 16:02:42,181 | sd | INFO | setup_common | Installing package: onnxruntime-gpu==1.16.0
+2023-11-26 16:02:42,182 | sd | DEBUG | setup_common | Running pip: install --upgrade onnxruntime-gpu==1.16.0
+2023-11-26 16:02:42,493 | sd | ERROR | setup_common | Error running pip: install --upgrade onnxruntime-gpu==1.16.0
+2023-11-26 16:02:42,494 | sd | DEBUG | setup_common | Pip output: ERROR: Could not find a version that satisfies the requirement onnxruntime-gpu==1.16.0 (from versions: none)
+ERROR: No matching distribution found for onnxruntime-gpu==1.16.0
+2023-11-26 16:02:42,494 | sd | DEBUG | setup_common | Package version not found: protobuf
+2023-11-26 16:02:42,494 | sd | INFO | setup_common | Installing package: protobuf==3.20.3
+2023-11-26 16:02:42,494 | sd | DEBUG | setup_common | Running pip: install --upgrade protobuf==3.20.3
+2023-11-26 16:02:43,575 | sd | DEBUG | setup_common | Package version not found: open-clip-torch
+2023-11-26 16:02:43,575 | sd | INFO | setup_common | Installing package: open-clip-torch==2.20.0
+2023-11-26 16:02:43,576 | sd | DEBUG | setup_common | Running pip: install --upgrade open-clip-torch==2.20.0
+2023-11-26 16:02:45,508 | sd | DEBUG | setup_common | Package version not found: opencv-python
+2023-11-26 16:02:45,508 | sd | INFO | setup_common | Installing package: opencv-python==4.7.0.68
+2023-11-26 16:02:45,509 | sd | DEBUG | setup_common | Running pip: install --upgrade opencv-python==4.7.0.68
+2023-11-26 16:02:51,064 | sd | DEBUG | setup_common | Package version not found: prodigyopt
+2023-11-26 16:02:51,064 | sd | INFO | setup_common | Installing package: prodigyopt==1.0
+2023-11-26 16:02:51,065 | sd | DEBUG | setup_common | Running pip: install --upgrade prodigyopt==1.0
+2023-11-26 16:02:52,170 | sd | DEBUG | setup_common | Package version not found: pytorch-lightning
+2023-11-26 16:02:52,170 | sd | INFO | setup_common | Installing package: pytorch-lightning==1.9.0
+2023-11-26 16:02:52,171 | sd | DEBUG | setup_common | Running pip: install --upgrade pytorch-lightning==1.9.0
+2023-11-26 16:02:54,111 | sd | DEBUG | setup_common | Package version not found: rich
+2023-11-26 16:02:54,111 | sd | INFO | setup_common | Installing package: rich==13.4.1
+2023-11-26 16:02:54,112 | sd | DEBUG | setup_common | Running pip: install --upgrade rich==13.4.1
+2023-11-26 16:02:55,405 | sd | DEBUG | setup_common | Package version not found: safetensors
+2023-11-26 16:02:55,405 | sd | INFO | setup_common | Installing package: safetensors==0.3.1
+2023-11-26 16:02:55,406 | sd | DEBUG | setup_common | Running pip: install --upgrade safetensors==0.3.1
+2023-11-26 16:02:56,538 | sd | DEBUG | setup_common | Package version not found: timm
+2023-11-26 16:02:56,538 | sd | INFO | setup_common | Installing package: timm==0.6.12
+2023-11-26 16:02:56,538 | sd | DEBUG | setup_common | Running pip: install --upgrade timm==0.6.12
+2023-11-26 16:02:57,886 | sd | DEBUG | setup_common | Package version not found: tk
+2023-11-26 16:02:57,886 | sd | INFO | setup_common | Installing package: tk==0.1.0
+2023-11-26 16:02:57,887 | sd | DEBUG | setup_common | Running pip: install --upgrade tk==0.1.0
+2023-11-26 16:02:58,938 | sd | DEBUG | setup_common | Package version not found: toml
+2023-11-26 16:02:58,938 | sd | INFO | setup_common | Installing package: toml==0.10.2
+2023-11-26 16:02:58,939 | sd | DEBUG | setup_common | Running pip: install --upgrade toml==0.10.2
+2023-11-26 16:02:59,975 | sd | DEBUG | setup_common | Package version not found: transformers
+2023-11-26 16:02:59,975 | sd | INFO | setup_common | Installing package: transformers==4.30.2
+2023-11-26 16:02:59,976 | sd | DEBUG | setup_common | Running pip: install --upgrade transformers==4.30.2
+2023-11-26 16:03:04,861 | sd | DEBUG | setup_common | Package version not found: voluptuous
+2023-11-26 16:03:04,861 | sd | INFO | setup_common | Installing package: voluptuous==0.13.1
+2023-11-26 16:03:04,862 | sd | DEBUG | setup_common | Running pip: install --upgrade voluptuous==0.13.1
+2023-11-26 16:03:05,950 | sd | DEBUG | setup_common | Package version not found: wandb
+2023-11-26 16:03:05,950 | sd | INFO | setup_common | Installing package: wandb==0.15.11
+2023-11-26 16:03:05,950 | sd | DEBUG | setup_common | Running pip: install --upgrade wandb==0.15.11
+2023-11-26 16:03:08,915 | sd | DEBUG | setup_common | Package version not found: -e
+2023-11-26 16:03:08,915 | sd | INFO | setup_common | Installing package: -e .
+2023-11-26 16:03:08,916 | sd | DEBUG | setup_common | Running pip: install --upgrade -e .
+2023-11-26 16:03:11,528 | sd | INFO | setup_common | Configuring accelerate...
+2023-11-26 16:03:11,529 | sd | DEBUG | setup_common | Source accelerate config location: /Users/nazanin/Desktop/trainDB/kohya_ss/setup/../config_files/accelerate/default_config.yaml
+2023-11-26 16:03:11,529 | sd | DEBUG | setup_common | Environment variables: HF_HOME: None, LOCALAPPDATA: None, USERPROFILE: None
+2023-11-26 16:03:11,529 | sd | DEBUG | setup_common | Target config location: None
+2023-11-26 16:03:11,529 | sd | WARNING | setup_common | Could not automatically configure accelerate. Please manually configure accelerate with the option in the menu or with: accelerate config.
